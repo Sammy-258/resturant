@@ -1,0 +1,313 @@
+
+/* .first-section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: .8;
+    z-index:-1;
+} */
+.logo-image{
+    width:120px;
+    height:70px;
+}
+.logo-image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.nav-links-ul{
+    display: flex;
+}
+.nav-links-ul li{
+    list-style-type: none;
+}
+.order-btn{
+    background-color:transparent !important;
+    color:white !important;
+    font-size:0.8rem !important;
+    border:1px solid rgb(255, 255, 255) !important;
+}
+.btn-general:focus{
+    box-shadow: none !important;
+}
+.nav-links{
+    color:rgb(138, 132, 132);
+    font-size: 0.9;
+    text-decoration: none;
+}
+.nav-links:hover{
+    border-bottom: 2px solid rgb(104, 61, 61);
+    color:rgb(0, 0, 0);
+}
+.main-text-one{
+    font-size:4rem;
+}
+a, span, p{
+    font-family: 'Lobster', cursive;
+}
+.col-lg-6 .img-box-one{
+    width:100%;
+    height:590px;
+}
+.img-box-two{
+    width:100%;
+    height:590px;
+}
+.general-img-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border:5px solid whitesmoke;
+    border-radius: 20px;
+}
+.about-image-box{
+    width:100%;
+    height: 450px;
+}
+.about-image-box img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.second-setion{
+    background-color: rgb(255, 247, 247);
+}
+
+
+
+@media(max-width:500px){
+    .welcoming-text-section{
+        margin-top:4rem;
+        margin-left:0rem;
+    }
+    .about-image-box{
+        width:100%;
+        height: 350px;
+    }
+    .first-section{
+        width:100%;
+        height: 100vh;
+        background-image: url('/images/first-small.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position:relative;
+        z-index:1;
+    }
+    .main-service-text{
+        font-size:1.4rem;
+        color:whitesmoke;
+    }
+    .main-service-icon{
+        font-size:2rem;
+        color:whitesmoke;
+    }
+    .products-display-one{
+        width:100%;
+        height: 180px !important;
+    }
+    .products-display-two{
+        width:100%;
+        height: 180px !important;
+    }
+    .testimonial-images{
+        width:100%;
+        height:50vh !important;
+    }
+    .nav-links-ul{
+        display: block;
+        width:fit-content !important;
+        margin: auto !important;
+        position: relative;
+        top:10%;
+    }
+    body .small-links-display{
+        background-color: rgb(10, 6, 6) !important;
+        width:100% !important;
+        height:100vh !important;
+        position:absolute;
+        top:0;
+        left:0;
+    }
+    .order-btn{
+        position: relative;
+        left:40%;
+        top:10%;
+    }
+    .nav-links{
+        color:rgb(138, 132, 132);
+        font-size: 1.5 !important;
+        text-decoration: none;
+    }
+    .nav-links:hover{
+        border-bottom: 2px solid rgb(104, 61, 61);
+        color:rgb(0, 0, 0);
+    }
+}
+@media(min-width:500px){
+    .welcoming-text-section{
+        margin-top:10rem;
+        margin-left:4rem;
+    }
+    .first-section{
+        width:100%;
+        height: 100vh;
+        background-image: url('/images/first-medium.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position:relative;
+        z-index:1;
+    }
+    .main-service-text{
+        font-size:1.4rem;
+        color:whitesmoke;
+    }
+    .main-service-icon{
+        font-size:2rem;
+        color:whitesmoke;
+    }
+
+
+    .products-display-two{
+        height: 200px;
+    }
+
+}
+@media(min-width:900px){
+    .welcoming-text-section{
+        margin-top:6rem !important;
+        margin-left:4rem !important;
+    }
+    .first-section{
+        width:100% !important;
+        height: 100vh;
+        background-image: url('/images/first.png') !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position:relative;
+        z-index:1;
+    }
+
+}
+
+.third-section{
+    background-color: rgb(22, 15, 15);
+}
+.products-display-one{
+    width:100%;
+    height: 300px;
+}
+
+.products-display-one img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid whitesmoke;
+    cursor: pointer;
+}
+.products-display-two{
+    width:100%;
+    height: 200px;
+}
+
+
+.products-display-two img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid whitesmoke;
+    cursor: pointer;
+}
+.products-display-three{
+    width:100%;
+    height: 100%;
+}
+
+
+.products-display-three img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid whitesmoke;
+    cursor: pointer;
+}
+.after-products-div{
+    display: none;
+}
+.products-display-one:hover .after-products-div{
+    background-color:rgba(255, 255, 255, 0.692);
+    width:100%;
+    height: 100%;
+    top:0;
+    display: block;
+    cursor: pointer;
+}
+.products-display-two:hover .after-products-div{
+    background-color:rgba(255, 255, 255, 0.692);
+    width:100%;
+    height: 100%;
+    top:0;
+    display: block;
+    cursor: pointer;
+}
+.products-display-three:hover .after-products-div{
+    background-color:rgba(255, 255, 255, 0.692);
+    width:100%;
+    height: 100%;
+    top:0;
+    display: block;
+    cursor: pointer;
+}
+.testimonial-images{
+    width:100%;
+    height:70vh;
+}
+.testimonial-images img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.testimonails-column{
+    background-color: rgb(41, 23, 23);
+}
+.col-lg-6 .map-box{
+    width:100%;
+    height: 80vh;
+}
+.col-lg-6 .map-box .gmap_canvas{
+    width:100%;
+    height: 80vh;
+}
+.col-lg-6 .map-box .gmap_canvas iframe{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    background-color: rgb(5, 3, 3);
+}
+.logo-image-footer{
+    width:100px;
+    height:70px;
+}
+.logo-image-footer img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.nav-links-footer{
+    color:whitesmoke;
+    font-size:1.2rem;
+    margin-left:1px;
+}
+.nav-links-footer:hover{
+    color:brown;
+    font-size:1.2rem;
+}

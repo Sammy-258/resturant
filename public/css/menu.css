@@ -1,0 +1,68 @@
+body{
+    width:100%;
+    height: fit-content;
+    background-image: url('/images/menu-back.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+}
+body::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.842);
+    opacity: .8;
+    z-index:-1;
+}
+.menu-links{
+    color:rgb(218, 218, 218) !important;
+}
+.menu-links:hover{
+    color:whitesmoke !important;
+    border-bottom: 2px solid rgb(214, 109, 109) !important;
+}
+.column-menu{
+    background-color: rgb(14, 5, 5);
+}
+/* body footer{
+    position: absolute !important;
+    bottom: 0 !important;
+    width:100% !important;
+} */
+/* In your CSS file */
+
+.pagination-container .page-item {
+    display: inline-block;
+  }
+
+  .pagination-container .page-item .page-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+  }
+
+  .pagination-container .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  .pagination-container .page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+  }
+
+  .pagination-container .page-item:last-child .page-link {
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
